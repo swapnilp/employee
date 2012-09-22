@@ -1,0 +1,2 @@
+<%= @employe.name %>
+<%= link_to "back", employes_path%>

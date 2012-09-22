@@ -1,0 +1,17 @@
+<table>
+  <%- @gadgags.each do |gadgag|%>
+  <tr>
+    <td>
+      <%= link_to "#{gadgag.name}", gadgag_path(gadgag) %>
+    </td>
+    <td>
+      <%= link_to "edit", edit_gadgag_path(gadgag) %>
+    </td>
+    <td>
+      <%= link_to "remove", gadgag_path(gadgag), :method => "delete"%>
+    </td>
+  </tr>
+  <%- end %>
+</table>
+
+<%= link_to "add Gadgat", new_gadgag_path %>

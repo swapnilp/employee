@@ -1,0 +1,24 @@
+<table>
+  <%- @employes.each do |employe|%>
+  <tr>
+    <td>
+      <%= link_to "#{employe.name}", employe_path(employe) %>
+    </td>
+    <td>
+      <%= "#{employe.mobile}" %>
+    </td>
+    <td>
+      <%= "#{employe.email}" %>
+    </td>
+    <td>
+      <%= link_to "edit", edit_employe_path(employe) %>
+    </td>
+    <td>
+      <%= link_to "remove", employe_path(employe), :method => "delete"%>
+    </td>
+  </tr>
+  <%- end %>
+</table>
+
+<%= link_to "add employee", new_employe_path %>
+

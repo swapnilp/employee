@@ -1,0 +1,8 @@
+class AddDesignationToEmployee < ActiveRecord::Migration
+  def up
+    add_column :employes, :designation, :string
+  end
+  
+  def down
+  end
+end

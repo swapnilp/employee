@@ -1,0 +1,8 @@
+class CreateGadgags < ActiveRecord::Migration
+  def change
+    create_table :gadgags do |t|
+
+      t.timestamps
+    end
+  end
+end
